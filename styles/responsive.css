@@ -1,0 +1,69 @@
+/* ===============RESPONSIVE STYLING START ================ */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-menu .main-menu-list ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .main-menu .main-menu-list {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    transform: translateX(-1000px);
+    transition: all 1s ease;
+    /* display: none; */
+    /* opacity: 0;
+    visibility: hidden; */
+  }
+
+  .justify-content-between {
+    justify-content: space-between;
+  }
+
+  nav .mobile-btn {
+    display: block;
+  }
+
+  .active .mobile-btn .close {
+    display: block;
+  }
+
+  .active .mobile-btn .menu {
+    display: none;
+  }
+
+  .active .main-menu-list {
+    /* opacity: 1;
+    visibility: visible; */
+    transform: translateX(0px);
+  }
+
+  .active .main-menu .main-menu-list ul {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+/* ===============RESPONSIVE STYLING END ================ */

@@ -4,13 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Influencer-Gear</title>
+    <!--=============CUSTOM CSS=================-->
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <!--=============BOX ICON=================-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--=============HEADER SECTION START=================-->
     <header>
-      <nav></nav>
+      <div class="container">
+        <nav class="row justify-content-between align-items-center">
+          <div class="mobile-btn">
+            <span class="mobile-btn-icon menu"><i class="bx bx-menu"></i></span>
+            <span class="mobile-btn-icon close"><i class="bx bx-x"></i></span>
+          </div>
+          <h3 class="logo">Influencer products</h3>
+          <div class="main-menu">
+            <div class="main-menu-list">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log In</a></li>
+              </ul>
+            </div>
+            <p>
+              <a href="#"><i class="bx bx-search"></i></a>
+            </p>
+            <p>
+              <span class="cart-notification">1</span>
+              <a href="#"><i class="bx bx-cart-alt"></i></a>
+            </p>
+          </div>
+        </nav>
+      </div>
     </header>
     <!--=============HEADER SECTION END=================-->
+
+    <!--=============HEADER SECTION END=================-->
+    <script src="javaScript/app.js"></script>
   </body>
 </html>
