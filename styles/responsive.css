@@ -114,6 +114,16 @@
   .banner-section-text .banner-section-description {
     width: 100%;
   }
+
+  .client-section-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .client-section-item img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
