@@ -1,12 +1,30 @@
 /* ===============RESPONSIVE STYLING START ================ */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  html {
+    font-size: 56%;
+  }
   .container {
     max-width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
+  }
+
+  nav {
+    padding: 0 0;
+  }
+
+  .main-menu .main-menu-list ul {
+    gap: 1rem;
+  }
+
+  nav .main-menu {
+    gap: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 56%;
+  }
   .main-menu .main-menu-list ul {
     flex-direction: column;
     align-items: center;
@@ -15,21 +33,24 @@
     height: 100%;
     opacity: 0;
     visibility: hidden;
+    /* margin-right: 5rem; */
   }
 
   .main-menu .main-menu-list {
     position: absolute;
     top: 0px;
-    left: 0;
+    left: 0px;
     height: 100vh;
     width: 100%;
     background-color: #fff;
     z-index: 10;
     transform: translateX(-1000px);
     transition: all 1s ease;
-    /* display: none; */
-    /* opacity: 0;
-    visibility: hidden; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    opacity: 0;
+    visibility: hidden;
   }
 
   .justify-content-between {
@@ -49,8 +70,8 @@
   }
 
   .active .main-menu-list {
-    /* opacity: 1;
-    visibility: visible; */
+    opacity: 1;
+    visibility: visible;
     transform: translateX(0px);
   }
 
@@ -58,12 +79,64 @@
     opacity: 1;
     visibility: visible;
   }
+
+  /* .row {
+    flex-direction: column;
+  } */
+
+  .banner-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .column-2 {
+    width: 100%;
+  }
+
+  .banner-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+
+  .banner-section-image {
+    width: 100%;
+  }
+
+  .banner-section-image img {
+    width: 100%;
+  }
+
+  .banner-section-text .banner-section-description {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  html {
+    font-size: 56%;
+  }
   .container {
     max-width: 100%;
     padding: 0 1rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  nav .logo {
+    font-size: 1.8rem;
+  }
+
+  .main-menu p a .bx-search {
+    display: none;
   }
 }
 /* ===============RESPONSIVE STYLING END ================ */
