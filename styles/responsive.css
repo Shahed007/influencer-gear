@@ -182,5 +182,9 @@
   .card-btn-box {
     justify-content: center;
   }
+
+  .section-card {
+    display: block;
+  }
 }
 /* ===============RESPONSIVE STYLING END ================ */

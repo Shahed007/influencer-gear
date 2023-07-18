@@ -485,6 +485,58 @@ nav .mobile-btn .close {
 }
 /* ===============FEATURED STYLING END================ */
 
+/* ===============FOOTER STYLING START================ */
+footer {
+  padding: 5rem 0;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--secondary-color);
+  gap: 1.5rem;
+}
+
+footer .footer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer .footer-title::first-letter {
+  font-size: 2.7rem;
+  color: var(--primary-color);
+}
+
+footer .footer-description {
+  color: #d9dbe1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8;
+  text-align: center;
+}
+
+footer .footer-social-icons {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  color: #fff;
+  gap: 1rem;
+}
+
+footer .footer-social-icons li {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #5e6366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ===============FOOTER STYLING END================ */
+
 /* ===============ANIMATION STYLING END================ */
 @keyframes runingborder {
   0% {
